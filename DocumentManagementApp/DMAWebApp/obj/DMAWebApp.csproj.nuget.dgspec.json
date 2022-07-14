@@ -1,0 +1,225 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\DMAWebApp.csproj": {}
+  },
+  "projects": {
+    "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\hnduo\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hnduo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
+        "projectName": "DMAService",
+        "projectPath": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
+        "packagesPath": "C:\\Users\\hnduo\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hnduo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\DMAWebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\DMAWebApp.csproj",
+        "projectName": "DMAWebApp",
+        "projectPath": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\DMAWebApp.csproj",
+        "packagesPath": "C:\\Users\\hnduo\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hnduo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj": {
+                "projectPath": "D:\\FPT SUMMER 2022\\PRN231\\Group Project\\Document Management\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
