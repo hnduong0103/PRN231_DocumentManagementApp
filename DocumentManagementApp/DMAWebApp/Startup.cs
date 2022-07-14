@@ -72,9 +72,13 @@ namespace DMAWebApp
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Auth/Error");
             }
+            app.UseAuthentication();
+
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 

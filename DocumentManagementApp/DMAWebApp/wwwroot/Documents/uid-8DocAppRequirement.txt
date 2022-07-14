@@ -1,0 +1,23 @@
+Function: Upload, Share, View, Delete, Download Files
+
+Roles: Mentor (Upload, Preview, Share, Download)
+	 Leader (Approve/Reject uploaded files, all func)
+	 Member (Upload, Preview, Download)
+	 Guest (only preview shared files (with ref link))
+
+
+Admin page:
+	- Manage Users:
+		+ View accounts
+		+ Disable accounts
+		+ Reset password
+	- Manage Roles:
+		+ Enable/disable functions of roles
+		+ Create new role 
+
+Business page:
+	- Login
+	- View Project list -> Choose project -> View Document
+
+task 1: xem lai field cua Document
+task 2: xem lai phan quyen cho Users

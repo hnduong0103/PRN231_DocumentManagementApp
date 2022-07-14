@@ -13,3 +13,4 @@ D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManag
 D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
 D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.pdb
 D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\appsettings.json
