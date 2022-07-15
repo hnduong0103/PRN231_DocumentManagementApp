@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj": {}
+    "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj": {}
   },
   "projects": {
-    "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj": {
+    "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\ducpr\\.nuget\\packages\\",
-        "outputPath": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\obj\\",
+        "projectPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ducpr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -94,28 +88,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj": {
+    "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
+        "projectUniqueName": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
         "projectName": "DMAService",
-        "projectPath": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
-        "packagesPath": "C:\\Users\\ducpr\\.nuget\\packages\\",
-        "outputPath": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\obj\\",
+        "projectPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ducpr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -128,8 +116,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj"
+              "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -168,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

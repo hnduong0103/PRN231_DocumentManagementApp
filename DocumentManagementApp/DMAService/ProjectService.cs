@@ -1,4 +1,5 @@
-﻿using DataAccess.DBModels;
+﻿using DataAccess;
+using DataAccess.DBModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,29 @@ namespace DMAService
         /*
          * GET LIST OF PROJECT
          */
-        public List<Project> GetAll(string email)
+        public async Task<IQueryable<ProjectViewModel>> GetAll(string email, string searchStr = null)
         {
             var user = _context.Users.Where(x => x.UserEmail == email).FirstOrDefault();
-            var projects = _context.Projects.Where(x => x.UsersUser.UserId == user.UserId).ToList();
-            return projects;
+            //var projects = _context.Projects.Where(x => x.UsersUser.UserId == user.UserId).ToList();
+            var projects = from x in _context.Projects
+                        where x.UsersUserId == user.UserId
+                        select new ProjectViewModel
+                        {
+                            ProjectId = x.ProjectId,
+                            ProjectName = x.ProjectName
+                        };
+
+            if (!String.IsNullOrEmpty(searchStr))
+            {
+                projects = from x in projects
+                           where x.ProjectName.Contains(searchStr)
+                           select new ProjectViewModel
+                           {
+                               ProjectId = x.ProjectId,
+                               ProjectName = x.ProjectName
+                           };
+            }
+            return projects.AsQueryable();
         }
 
         /*
