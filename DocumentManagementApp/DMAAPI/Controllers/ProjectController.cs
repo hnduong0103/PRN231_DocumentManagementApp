@@ -23,7 +23,7 @@ namespace DMAAPI.Controllers
         public async Task<IActionResult> IndexAsync(string searchStr, int page = 1)
         {
             var email = HttpContext.Session.GetString("UserEmail");
-            var categories = _projectService.GetAll(email, searchStr);
+            var categories = await _projectService.GetAll(email, searchStr);
             int pageSize = 10;
             return new JsonResult(await PaginatedList<ProjectViewModel>.CreateAsync(categories.AsNoTracking(), page, pageSize));
         }

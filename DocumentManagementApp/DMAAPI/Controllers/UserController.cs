@@ -4,6 +4,7 @@ using DMAAPI.Models;
 using DMAService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
 
@@ -24,7 +25,7 @@ namespace DMAAPI.Controllers
          */
         public async Task<IActionResult> IndexAsync(string searchStr, int page = 1)
         {
-            var users = _userService.GetAll(searchStr);
+            var users = await _userService.GetAll(searchStr);
             int pageSize = 10;
             return new JsonResult(await PaginatedList<UserViewModel>.CreateAsync(users.AsNoTracking(), page, pageSize));
         }
