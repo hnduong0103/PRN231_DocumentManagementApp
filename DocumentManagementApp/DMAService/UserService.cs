@@ -1,4 +1,5 @@
-﻿using DataAccess.DBModels;
+﻿using DataAccess;
+using DataAccess.DBModels;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -23,10 +24,30 @@ namespace DMAService
         /*
          * GET LIST OF USERS
          */
-        public List<User> GetAll()
+        public async Task<IQueryable<UserViewModel>> GetAll(string searchStr = null)
         {
-            var _users = _context.Users.ToList();
-            return _users;
+            //var _users = _context.Users.ToList();
+            var _users = from x in _context.Users
+                           select new UserViewModel
+                           {
+                               UserId = x.UserId,
+                               UserEmail = x.UserEmail,
+                               UserName = x.UserName,
+                               UserRole = x.UserRole
+                           };
+            if (!string.IsNullOrEmpty(searchStr))
+            {
+                _users = from x in _users
+                         where (x.UserEmail.Contains(searchStr) || x.UserName.Contains(searchStr))
+                         select new UserViewModel
+                         {
+                             UserId = x.UserId,
+                             UserEmail = x.UserEmail,
+                             UserName = x.UserName,
+                             UserRole = x.UserRole
+                         };
+            }
+            return _users.AsQueryable();
         }
 
         /*
