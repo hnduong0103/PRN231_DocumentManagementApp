@@ -23,6 +23,7 @@ namespace DMAAPI.Controllers
         /*
          * GET LIST OF USERS
          */
+        [HttpGet]
         public async Task<IActionResult> IndexAsync(string searchStr, int page = 1)
         {
             var users = await _userService.GetAll(searchStr);
@@ -61,6 +62,7 @@ namespace DMAAPI.Controllers
         /*
          * DELETE USER BY ID
          */
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             var status = _userService.Delete(id);
