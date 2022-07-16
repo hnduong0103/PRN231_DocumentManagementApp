@@ -61,7 +61,7 @@ namespace DMAAPI.Controllers
         /*
          * PROJECT DELETE BY ID
          */
-
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             var status = _projectService.DeleteProject(id);
