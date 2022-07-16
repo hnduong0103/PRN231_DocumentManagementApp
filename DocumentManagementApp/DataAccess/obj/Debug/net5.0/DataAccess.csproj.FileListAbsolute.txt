@@ -30,3 +30,19 @@ O:\9.Summer 2022\New folder\GroupProject\PRN231_DocumentManagementApp\DocumentMa
 O:\9.Summer 2022\New folder\GroupProject\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.pdb
 O:\9.Summer 2022\New folder\GroupProject\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
 O:\9.Summer 2022\New folder\GroupProject\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\appsettings.json
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.dll
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.csprojAssemblyReference.cache
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.dll
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+S:\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache

@@ -6178,20 +6178,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\ducpr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\DMAWebApp.csproj",
+      "projectUniqueName": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\DMAWebApp.csproj",
       "projectName": "DMAWebApp",
-      "projectPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\DMAWebApp.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\obj\\",
+      "projectPath": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\DMAWebApp.csproj",
+      "packagesPath": "C:\\Users\\ducpr\\.nuget\\packages\\",
+      "outputPath": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAWebApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ducpr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6204,8 +6212,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj": {
-              "projectPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj"
+            "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj": {
+              "projectPath": "S:\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj"
             }
           }
         }
@@ -6237,7 +6245,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
       }
     }
   }
