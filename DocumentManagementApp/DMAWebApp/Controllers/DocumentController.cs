@@ -1,6 +1,7 @@
 ﻿using DataAccess;
 using DataAccess.DBModels;
 using DMAService;
+using DMAWebApp.HttpClients;
 using DMAWebApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
@@ -21,7 +22,7 @@ namespace DMAWebApp.Controllers
         private readonly IHostingEnvironment _appEnvironment;
         private readonly DocumentService _documentService;
         private ProjectService _projectService;
-
+        private DocumentClient _client;
         public DocumentController(
             IHostingEnvironment appEnvironment,
             DMSDatabaseContext context)
@@ -29,6 +30,7 @@ namespace DMAWebApp.Controllers
             _appEnvironment = appEnvironment;
             _documentService = new DocumentService(context);
             _projectService = new ProjectService(context);
+            _client = new DocumentClient();
         }
 
         /*

@@ -1,6 +1,7 @@
 ﻿using DataAccess;
 using DataAccess.DBModels;
 using DMAService;
+using DMAWebApp.HttpClients;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -15,17 +16,20 @@ namespace DMAWebApp.Controllers
     public class UserController : Controller
     {
         private readonly UserService _userService;
+
+        private readonly UserClient _client;
         public UserController(DMSDatabaseContext _context, IConfiguration _config)
         {
             _userService = new UserService(_context, _config);
+            _client = new UserClient();
         }
 
         /*
          * GET LIST OF USERS
          */
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var users = _userService.GetAll();
+            var users = await _client.GetUsersAsync();
             return View(users);
         }
 
