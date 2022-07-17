@@ -21,7 +21,7 @@ namespace DMAAPI.Controllers
          * PROJECT LIST
          */
         [HttpGet]
-        public IActionResult Index(string email)
+        public IActionResult Index([FromQuery]string email)
         {
             //var email = HttpContext.Session.GetString("UserEmail");
             var projects = _projectService.GetAll(email);
@@ -32,7 +32,7 @@ namespace DMAAPI.Controllers
          * NEW PROJECT CREATE
          */
         [HttpPost]
-        public IActionResult Create(string email, [FromBody] ProjectCreateModel project)
+        public IActionResult Create([FromQuery] string email, [FromBody] ProjectCreateModel project)
         {
             //var email = HttpContext.Session.GetString("UserEmail");
             var status = _projectService.CreateProject(project, email);
