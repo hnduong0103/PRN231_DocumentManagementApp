@@ -5,6 +5,7 @@ using DMAWebApp.HttpClients;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,15 +46,20 @@ namespace DMAWebApp.Controllers
          * CREATE NEW USER
          */
         [HttpPost]
-        public IActionResult Create(UserCreateModel user)
+        public async Task<IActionResult> Create(UserCreateModel user)
         {
-            var status = _userService.Create(user);
-            if (status)
+            if (!ModelState.IsValid) return View();
+
+            var status = await _client.CreateUserAsync(user);
+            dynamic res = JsonConvert.DeserializeObject(status);
+            if (res.status == true)
             {
-                ViewBag.success = "Created successfully";
+                ViewBag.error = null;
+                ViewBag.success = "Created success";
             }
             else
             {
+                ViewBag.success = null;
                 ViewBag.error = "Error Occurred";
             }
             return View();

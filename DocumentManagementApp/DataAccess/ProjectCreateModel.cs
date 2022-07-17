@@ -9,7 +9,7 @@ namespace DataAccess
 {
     public class ProjectCreateModel
     {
-        [Required]
+        [Required(AllowEmptyStrings = false)]
         [MinLength(6,ErrorMessage ="Project Name must have atleast 6 characters")]
         public string ProjectName { get; set; }
     }

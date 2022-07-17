@@ -1,7 +1,9 @@
-﻿using DataAccess.DBModels;
+﻿using DataAccess;
+using DataAccess.DBModels;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace DMAWebApp.HttpClients
@@ -30,6 +32,23 @@ namespace DMAWebApp.HttpClients
                 users = JsonConvert.DeserializeObject<List<User>>(res);
             }
             return users;
+        }
+
+        public async Task<string> CreateUserAsync(UserCreateModel user)
+        {
+            var payload = new
+            {
+                userEmail = user.UserEmail,
+                userName = user.UserName,
+                password = user.Password,
+                userRole = user.UserRole
+            };
+
+            var stringPayload = JsonConvert.SerializeObject(payload);
+            var httpContent = new StringContent(stringPayload, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = await client.PostAsync("https://localhost:5001/api/User", httpContent);
+            string res = await response.Content.ReadAsStringAsync();
+            return res;
         }
     }
 }

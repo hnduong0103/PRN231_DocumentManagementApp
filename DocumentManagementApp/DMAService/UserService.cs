@@ -36,24 +36,30 @@ namespace DMAService
         public bool Create(UserCreateModel user)
         {
             bool status;
-            User item = new User();
-            item.UserName = user.UserName;
-            item.UserEmail = user.UserEmail;
-            item.Password = user.Password;
-            item.UserRole = user.UserRole;
-            try
+            var existedUser = _context.Users.FirstOrDefault(u => u.UserEmail == user.UserEmail);
+            if (existedUser == null)
             {
-                _context.Users.Add(item);
-                _context.SaveChanges();
-                SendMail(user.UserName, user.UserEmail, user.Password);
-                status = true;
+                User item = new User();
+                item.UserName = user.UserName;
+                item.UserEmail = user.UserEmail;
+                item.Password = user.Password;
+                item.UserRole = user.UserRole;
+                try
+                {
+                    _context.Users.Add(item);
+                    _context.SaveChanges();
+                    SendMail(user.UserName, user.UserEmail, user.Password);
+                    status = true;
+                }
+                catch (Exception ex)
+                {
+                    var exp = ex;
+                    status = false;
+                }
+                return status;
+
             }
-            catch (Exception ex)
-            {
-                var exp = ex;
-                status = false;
-            }
-            return status;
+            return false;
         }
 
         /*

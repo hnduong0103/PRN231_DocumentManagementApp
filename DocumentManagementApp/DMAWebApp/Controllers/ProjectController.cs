@@ -5,6 +5,7 @@ using DMAWebApp.HttpClients;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,17 +48,23 @@ namespace DMAWebApp.Controllers
          * NEW PROJECT CREATE
          */
         [HttpPost]
-        public IActionResult Create(ProjectCreateModel project)
+        public async Task<IActionResult> Create(ProjectCreateModel project)
         {
+            if (!ModelState.IsValid) return View();
+
             var email = HttpContext.Session.GetString("UserEmail");
-            var status = _projectService.CreateProject(project, email);
-            if (status)
+
+            var status = await _client.CreateProjectAsync(project.ProjectName, email);
+            dynamic res = JsonConvert.DeserializeObject(status);
+            if (res.error != null)
             {
-                ViewBag.success = "Created successfully";
+                ViewBag.error = null;
+                ViewBag.success = "Created success";
             }
             else
             {
-                ViewBag.error = "Something was wrong.";
+                ViewBag.success = null;
+                ViewBag.error = "Error Occurred";
             }
             return View();
         }

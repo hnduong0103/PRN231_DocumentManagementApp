@@ -10,7 +10,7 @@ namespace DataAccess
     public class UserCreateModel
     {
         [Required]
-        [DataType(DataType.EmailAddress)]
+        [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string UserEmail { get; set; }
         [Required]
         [MinLength(6, ErrorMessage = "User Name must have atleast 6 characters")]
