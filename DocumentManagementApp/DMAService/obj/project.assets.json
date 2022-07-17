@@ -6160,19 +6160,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\tranb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "O:\\9.Summer 2022\\New folder\\GroupProject\\nộp bài\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
+      "projectUniqueName": "C:\\Users\\tranb\\Desktop\\New folder (6)\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
       "projectName": "DMAService",
-      "projectPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\nộp bài\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\nộp bài\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\obj\\",
+      "projectPath": "C:\\Users\\tranb\\Desktop\\New folder (6)\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\DMAService.csproj",
+      "packagesPath": "C:\\Users\\tranb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tranb\\Desktop\\New folder (6)\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DMAService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tranb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6186,8 +6186,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "O:\\9.Summer 2022\\New folder\\GroupProject\\nộp bài\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "O:\\9.Summer 2022\\New folder\\GroupProject\\nộp bài\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\tranb\\Desktop\\New folder (6)\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\tranb\\Desktop\\New folder (6)\\PRN231_DocumentManagementApp\\DocumentManagementApp\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -6226,7 +6226,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

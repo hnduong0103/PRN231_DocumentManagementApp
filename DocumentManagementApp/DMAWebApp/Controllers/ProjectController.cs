@@ -1,6 +1,7 @@
 ﻿using DataAccess;
 using DataAccess.DBModels;
 using DMAService;
+using DMAWebApp.HttpClients;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,18 +16,21 @@ namespace DMAWebApp.Controllers
     public class ProjectController : Controller
     {
         private ProjectService _projectService;
+
+        private ProjectClient _client;
         public ProjectController(DMSDatabaseContext context)
         {
             _projectService = new ProjectService(context);
+            _client = new ProjectClient();
         }
 
         /*
          * PROJECT LIST
          */
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var email = HttpContext.Session.GetString("UserEmail");
-            var categories = _projectService.GetAll(email);
+            var categories = await _client.GetProjectAsync(email);
             return View(categories);
         }
 

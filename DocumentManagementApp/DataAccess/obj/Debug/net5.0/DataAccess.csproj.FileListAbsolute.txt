@@ -30,3 +30,19 @@ O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp
 O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.pdb
 O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
 O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\appsettings.json
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\tranb\Desktop\New folder (6)\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
