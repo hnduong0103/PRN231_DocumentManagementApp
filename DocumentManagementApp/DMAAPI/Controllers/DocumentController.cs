@@ -32,9 +32,9 @@ namespace DMAAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index(string str, int page = 1)
+        public async Task<IActionResult> Index(string email, string str, int page = 1)
         {
-            var email = HttpContext.Session.GetString("UserEmail");
+            //var email = HttpContext.Session.GetString("UserEmail");
             var documentList = await _documentService.GetList(email, str);
             int pageSize = 10;
             return new JsonResult(await PaginatedList<DocumentViewModel>.CreateAsync(documentList.AsNoTracking(), page, pageSize));
@@ -45,9 +45,9 @@ namespace DMAAPI.Controllers
          */
         [HttpGet]
         [Route("create")]
-        public IActionResult Create()
+        public IActionResult Create(string email)
         {
-            var email = HttpContext.Session.GetString("UserEmail");
+            //var email = HttpContext.Session.GetString("UserEmail");
             return new JsonResult(email);
         }
 
@@ -56,9 +56,9 @@ namespace DMAAPI.Controllers
          */
         [HttpPost]
         [Route("create")]
-        public IActionResult Create(IFormFile file, Document document)
+        public IActionResult Create(string email, IFormFile file, Document document)
         {
-            var email = HttpContext.Session.GetString("UserEmail");
+            //var email = HttpContext.Session.GetString("UserEmail");
             var projects = _projectService.GetAll(email);
             string pathRoot = _appEnvironment.WebRootPath;
             var documentUploadResponse = _documentService.Upload(file, pathRoot, document, email);
@@ -80,10 +80,10 @@ namespace DMAAPI.Controllers
          */
         [HttpGet]
         [Route("download/{id}")]
-        public async Task<ActionResult> DownloadAsync(int id)
+        public async Task<ActionResult> DownloadAsync(int userId, int id)
         {
             int documentId = (int) id;
-            int userId = (int) HttpContext.Session.GetInt32("UserId");
+            //int userId = (int) HttpContext.Session.GetInt32("UserId");
             var status = _documentService.DocumentPermissionRule(userId, documentId);
             if (status)
             {
