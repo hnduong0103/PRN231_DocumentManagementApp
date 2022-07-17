@@ -27,12 +27,12 @@ namespace DataAccess.DBModels
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=(local);Initial Catalog=DMSDatabase;User ID=sa;Password=1234567890;");
-                // var builder = new ConfigurationBuilder()
-                //    .SetBasePath(Directory.GetCurrentDirectory())
-                //    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-                //IConfigurationRoot configuration = builder.Build();
-                //optionsBuilder.UseSqlServer(configuration.GetConnectionString("Database"));
+                //optionsBuilder.UseSqlServer("Data Source=(local);Initial Catalog=DMSDatabase;User ID=sa;Password=1234567890;");
+                 var builder = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                IConfigurationRoot configuration = builder.Build();
+                optionsBuilder.UseSqlServer(configuration.GetConnectionString("Database"));
             }
         }
 
