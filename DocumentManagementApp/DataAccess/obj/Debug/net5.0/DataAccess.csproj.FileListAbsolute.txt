@@ -14,3 +14,19 @@ D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManag
 D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.pdb
 D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
 D:\FPT SUMMER 2022\PRN231\Group Project\Document Management\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\appsettings.json
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\appsettings.json
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.dll
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.dll
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\refint\DataAccess.dll
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+O:\9.Summer 2022\New folder\GroupProject\nộp bài\PRN231_DocumentManagementApp\DocumentManagementApp\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll

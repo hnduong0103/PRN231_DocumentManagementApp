@@ -1,4 +1,5 @@
-﻿using DataAccess.DBModels;
+﻿using DataAccess;
+using DataAccess.DBModels;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace DMAService
         /*
          * CREATE USER
          */
-        public bool Create(User user)
+        public bool Create(UserCreateModel user)
         {
             bool status;
             User item = new User();

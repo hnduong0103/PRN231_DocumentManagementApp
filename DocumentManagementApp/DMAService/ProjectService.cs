@@ -1,4 +1,5 @@
-﻿using DataAccess.DBModels;
+﻿using DataAccess;
+using DataAccess.DBModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace DMAService
         /*
          * CREATE PROJECT
          */
-        public bool CreateProject(Project Proj, string email)
+        public bool CreateProject(ProjectCreateModel Proj, string email)
         {
             bool status;
             var user = _context.Users.Where(x => x.UserEmail == email).FirstOrDefault();

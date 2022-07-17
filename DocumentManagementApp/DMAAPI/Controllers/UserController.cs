@@ -1,18 +1,15 @@
 ﻿using DataAccess;
 using DataAccess.DBModels;
 using DMAService;
-using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace DMAWebApp.Controllers
+namespace DMAAPI.Controllers
 {
-    [Authorize(Policy = "Admin")]
-    public class UserController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserController : ControllerBase
     {
         private readonly UserService _userService;
         public UserController(DMSDatabaseContext _context, IConfiguration _config)
@@ -23,19 +20,13 @@ namespace DMAWebApp.Controllers
         /*
          * GET LIST OF USERS
          */
+        [HttpGet]
         public IActionResult Index()
         {
             var users = _userService.GetAll();
-            return View(users);
+            return new JsonResult(users);
         }
 
-        /*
-         * NEW USER CREATE FORM
-         */
-        public IActionResult Create()
-        {
-            return View();
-        }
 
         /*
          * CREATE NEW USER
@@ -43,33 +34,38 @@ namespace DMAWebApp.Controllers
         [HttpPost]
         public IActionResult Create(UserCreateModel user)
         {
+            string success = null;
+            string error = null;
             var status = _userService.Create(user);
             if (status)
             {
-                ViewBag.success = "Created successfully";
+                success = "Created successfully";
             }
             else
             {
-                ViewBag.error = "Error Occurred";
+                error = "Error Occurred";
             }
-            return View();
+            return new JsonResult(new { status = status, error = error, success = success });
         }
 
         /*
          * DELETE USER BY ID
          */
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
+            string success = null;
+            string error = null;
             var status = _userService.Delete(id);
             if (status)
             {
-                ViewBag.success = "Deleted successfully";
+                success = "Deleted successfully";
             }
             else
             {
-                ViewBag.error = "Error Occurred";
+                error = "Error Occurred";
             }
-            return RedirectToAction("Index");
+            return new JsonResult(new { status = status, error = error, success = success });
         }
     }
 }

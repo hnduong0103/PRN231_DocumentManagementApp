@@ -1,4 +1,5 @@
-﻿using DataAccess.DBModels;
+﻿using DataAccess;
+using DataAccess.DBModels;
 using DMAService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -42,7 +43,7 @@ namespace DMAWebApp.Controllers
          * NEW PROJECT CREATE
          */
         [HttpPost]
-        public IActionResult Create(Project project)
+        public IActionResult Create(ProjectCreateModel project)
         {
             var email = HttpContext.Session.GetString("UserEmail");
             var status = _projectService.CreateProject(project, email);

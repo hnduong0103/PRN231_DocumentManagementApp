@@ -44,6 +44,7 @@ namespace DMAAPI.Controllers
          * SHOW DOCUMENT UPLOAD FORM
          */
         [HttpGet]
+        [Route("create")]
         public IActionResult Create()
         {
             var email = HttpContext.Session.GetString("UserEmail");
@@ -54,6 +55,7 @@ namespace DMAAPI.Controllers
          * UPLOAD NEW DOCUMENT
          */
         [HttpPost]
+        [Route("create")]
         public IActionResult Create(IFormFile file, Document document)
         {
             var email = HttpContext.Session.GetString("UserEmail");
@@ -76,6 +78,8 @@ namespace DMAAPI.Controllers
         /*
          * DOWNLOAD DOCUMENT
          */
+        [HttpGet]
+        [Route("download/{id}")]
         public async Task<ActionResult> DownloadAsync(int id)
         {
             int documentId = (int) id;
@@ -96,6 +100,7 @@ namespace DMAAPI.Controllers
         /*
          * RETURN FILE
          */
+        [NonAction]
         public async Task<FileResult> ReturnDocumentFileAsync(string filePath, string fileName)
         {
             var path = Path.Combine(
